@@ -14,6 +14,9 @@ A simple yet powerful Streamlit-based web application that calculates the combin
 - Python 3.11 or higher
 - Streamlit
 
+## 🔗 Live-demo
+[open in browser](https://sla-app-8a9dugwnczgp4kdxr7nljg.streamlit.app/)
+
 ## 📦 Installation
 
 1. Clone this repository:
