@@ -1,0 +1,22 @@
+App Service: 0.999
+SQL Database: 0.9999
+Blob Storage: 0.999
+Cosmos DB: 0.99999
+Azure Functions: 0.9995
+Azure Front Door: 0.9999
+Azure Kubernetes Service: 0.9995
+Virtual Machines: 0.9999
+VPN Gateway: 0.9995
+Application Gateway: 0.9995
+Azure DNS: 0.99999
+Azure Active Directory: 0.9999
+Event Grid: 0.9995
+Key Vault: 0.9999
+Service Bus: 0.9999
+Azure Container Apps: 0.999
+Azure SignalR Service: 0.9999
+Storage Queues: 0.999
+Table Storage: 0.999
+Azure Load Balancer: 0.9999
+Azure Bastion: 0.9995
+Azure Monitor: 0.9999

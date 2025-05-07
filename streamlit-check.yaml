@@ -1,0 +1,36 @@
+name: Streamlit SLA Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-sla-app:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+
+    - name: Run Streamlit in headless mode (sanity check)
+      run: |
+        source venv/bin/activate
+        streamlit run sla_app.py --server.headless true &
+        sleep 10
+        pkill -f streamlit
+
+    - name: Success message
+      run: echo "✅ Streamlit app pyörii ongelmitta!"
